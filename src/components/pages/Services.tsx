@@ -8,12 +8,12 @@ const services = [
   {
     icon: <FaReact className="text-5xl text-blue-500" />,
     title: "React Development",
-    description: "We specialize in creating scalable and dynamic web applications using React. Whether you're building a single-page app or a large-scale platform, our team ensures seamless performance and user experience.",
+    description: "We specialize in creating scalable and dynamic web applications using React. Whether you're building a single-page app or a large-scale platform",
   },
   {
     icon: <FaJsSquare className="text-5xl text-yellow-500" />,
     title: "JavaScript Development",
-    description: "We build dynamic, interactive websites using JavaScript. From simple animations to complex web apps, we ensure an intuitive and efficient user experience across platforms.",
+    description: "We build dynamic, interactive websites using JavaScript. From simple animations to complex web apps, we ensure an intuitive and efficient",
   },
   {
     icon: <FaNodeJs className="text-5xl text-green-500" />,
@@ -23,17 +23,17 @@ const services = [
   {
     icon: <FaBrain className="text-5xl text-purple-500" />,
     title: "Artificial Intelligence",
-    description: "We use the latest AI techniques and tools to develop smart applications, automate tasks, and create predictive models that enhance user experiences and decision-making.",
+    description: "We use the latest AI techniques and tools to develop smart applications, automate tasks, and create predictive models that enhance user experiences",
   },
   {
     icon: <FaHtml5 className="text-5xl text-orange-500" />,
     title: "HTML/CSS Web Design",
-    description: "We design and develop responsive, user-friendly, and modern websites using HTML5 and CSS3. From layouts to animations, we ensure every detail enhances user interaction.",
+    description: "We design and develop responsive, user-friendly, and modern websites using HTML5 and CSS3. From layouts to animations, we ensure every detail",
   },
   {
     icon: <FaCss3Alt className="text-5xl text-blue-400" />,
     title: "CSS Web Styling",
-    description: "We provide stunning visual design using CSS, creating modern layouts, animations, and ensuring your website looks beautiful and is responsive across all devices.",
+    description: "We provide stunning visual design using CSS, creating modern layouts, animations, and ensuring your website looks beautiful and is responsive across",
   }
 ];
 
@@ -72,19 +72,19 @@ const ServiceSection: React.FC = () => {
 
   return (
     <section id="our-services" className="service w-full h-auto relative bg-[#121212] py-16">
-      <h1 className="text-white text-5xl font-extrabold lg:text-5xl text-center mt-0" style={{ marginTop: '-30px', marginBottom: "-30px" }}>
+      <h1 className="text-white text-4xl font-extrabold lg:text-5xl text-center mt-[-30] mb-[-30px]">
         Our Services
       </h1>
 
       <div className="flex justify-center items-center mt-8 w-full max-w-[1800px] mx-auto relative">
-        {!isMobile && (
-          <button
-            onClick={handlePrev}
-            className="text-white text-2xl p-2 bg-[#333333] rounded-full absolute left-0 transform -translate-y-1/2 top-1/2 hover:scale-105 hover:bg-[#9b59b6] transition-all"
-          >
-            ◀
-          </button>
-        )}
+        {/* Left button with shadow */}
+        <button
+          onClick={handlePrev}
+          className={`text-white text-2xl p-2 bg-[#333333] rounded-full absolute left-2 lg:left-4 top-1/2 transform -translate-y-1/2 shadow-xl hover:scale-110 hover:bg-[#9b59b6] transition-all`}
+          style={{ zIndex: 10 }}
+        >
+          ◀
+        </button>
 
         <div className="relative flex gap-8 mt-6 w-full mx-auto justify-center">
           {services.slice(currentIndex, currentIndex + (isMobile ? 1 : 2)).map((service, index) => (
@@ -105,37 +105,23 @@ const ServiceSection: React.FC = () => {
                 {service.description}
               </p>
 
-              {isMobile && (
-                <div className="flex justify-center mt-8">
-                  <button
-                    onClick={handlePrev}
-                    className="text-white text-2xl p-2 bg-[#333333] rounded-full hover:scale-105"
-                  >
-                    ◀
-                  </button>
-                  <button className="w-[140px] py-3 border-2 border-white rounded-lg text-white text-sm font-bold hover:scale-110 hover:bg-[#9b59b6] transition-all duration-300">
-                    Read More
-                  </button>
-                  <button
-                    onClick={handleNext}
-                    className="text-white text-2xl p-2 bg-[#333333] rounded-full hover:scale-105"
-                  >
-                    ▶
-                  </button>
-                </div>
-              )}
+              <div className="flex justify-center mt-8">
+                <button className="w-[140px] py-3 border-2 border-white rounded-lg text-white text-sm font-bold hover:scale-110 hover:bg-[#9b59b6] transition-all duration-300">
+                  Read More
+                </button>
+              </div>
             </motion.div>
           ))}
         </div>
 
-        {!isMobile && (
-          <button
-            onClick={handleNext}
-            className="text-white text-2xl p-2 bg-[#333333] rounded-full absolute right-0 transform -translate-y-1/2 top-1/2 hover:scale-105 hover:bg-[#9b59b6] transition-all"
-          >
-            ▶
-          </button>
-        )}
+        {/* Right button with shadow */}
+        <button
+          onClick={handleNext}
+          className="text-white text-2xl p-2 bg-[#333333] rounded-full absolute right-2 lg:right-4 top-1/2 transform -translate-y-1/2 shadow-xl hover:scale-110 hover:bg-[#9b59b6] transition-all"
+          style={{ zIndex: 10 }}
+        >
+          ▶
+        </button>
       </div>
     </section>
   );

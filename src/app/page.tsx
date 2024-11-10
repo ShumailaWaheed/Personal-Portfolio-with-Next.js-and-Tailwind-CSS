@@ -1,11 +1,10 @@
-import React from "react";
-import Navbar from "@/components/Nevbar";
-import Hero from "@/components/pages/Home";
-import Technical from "@/components/Technical";
-import About from "@/components/pages/About";
-import Contact from "@/components/pages/Contact";
-import Footer from "@/components/Footer";
-import Services from "@/components/pages/Services";
+import Navbar from '@/components/Nevbar';
+import HomeComponent from '@/components/pages/Home'; 
+import Technical from '@/components/Technical';
+import About from '@/components/pages/About';
+import Services from '@/components/pages/Services';
+import Contact from '@/components/pages/Contact';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -13,7 +12,7 @@ export default function Home() {
       <div className="container mx-auto px-12 py-4">
         <Navbar />
         <div className="mt-[120px]">
-          <Hero />
+          <HomeComponent /> 
         </div>
         <Technical />
         <About />
@@ -24,6 +23,3 @@ export default function Home() {
     </main>
   );
 }
-
-
-

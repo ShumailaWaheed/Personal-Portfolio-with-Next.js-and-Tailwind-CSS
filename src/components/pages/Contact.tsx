@@ -34,19 +34,9 @@ const Contact: React.FC = () => {
 
   return (
     <>
-      <nav className="bg-[#1c1c1c] p-4">
-        <ul className="flex justify-center space-x-8">
-          <li>
-            <a href="#contact" className="text-white text-lg font-semibold hover:text-[#9b59b6] transition-colors duration-300">
-              Contact
-            </a>
-          </li>
-        </ul>
-      </nav>
-
       <section id="contact" className="py-16 px-4 text-white">
         <div className="container mx-auto">
-          <h2 className="text-5xl text-center font-bold mb-8" style={{ marginTop: '-50px' }}>Contact Me</h2>
+          <h2 className="text-4xl text-center font-bold mb-8 mt-[-70px]" >Contact Me</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-8">
@@ -57,10 +47,10 @@ const Contact: React.FC = () => {
                 className="p-4 sm:p-6 bg-[#1c1c1c] rounded-lg shadow-xl shadow-[#9b59b6] hover:shadow-[0_5px_20px_rgba(128,0,128,0.6)] transition-all ease-in-out relative flex flex-col items-center cursor-pointer active:shadow-2xl hover:scale-105"
               >
                 <div className="flex justify-center mb-4">
-                  <FaEnvelope className="text-7xl text-gray-400 hover:text-[#9b59b6] transition-colors duration-300" />
+                  <FaEnvelope className="text-6xl text-gray-400 hover:text-[#9b59b6] transition-colors duration-300" />
                 </div>
-                <h4 className="text-2xl font-semibold text-center">Email</h4>
-                <p className="mt-4 text-center text-lg">shumaila@example.com</p>
+                <h4 className="text-1 font-semibold text-center">Email</h4>
+                <p className="mt-4 text-center text-lg-1">shumaila@example.com</p>
               </motion.div>
 
               <motion.div
@@ -70,15 +60,15 @@ const Contact: React.FC = () => {
                 className="p-4 sm:p-6 bg-[#1c1c1c] rounded-lg shadow-xl shadow-[#9b59b6] hover:shadow-[0_5px_20px_rgba(128,0,128,0.6)] transition-all ease-in-out relative flex flex-col items-center cursor-pointer active:shadow-2xl hover:scale-105"
               >
                 <div className="flex justify-center mb-4">
-                  <FaGithub className="text-7xl text-gray-400 hover:text-[#9b59b6] transition-colors duration-300" />
+                  <FaGithub className="text-6xl text-gray-400 hover:text-[#9b59b6] transition-colors duration-300" />
                 </div>
                 <h4 className="text-2xl font-semibold text-center">GitHub</h4>
-                <p className="mt-4 text-center text-lg">
+                <p className="mt-4 text-center text-lg-1">
                   <a
                     href="https://github.com/ShumailaWaheed"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-[#9b59b6] transition-colors duration-300"
+                    className="hover:text-[#9b59b6] transition-colors duration-300 "
                   >
                     github.com/ShumailaWaheed
                   </a>
