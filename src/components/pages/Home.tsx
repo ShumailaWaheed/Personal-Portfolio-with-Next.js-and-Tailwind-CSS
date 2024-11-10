@@ -38,7 +38,7 @@ const Home: React.FC = () => {
               className="text-white text-3xl sm:text-5xl lg:text-6xl"
             />
           </h1>
-          <p className="text-[#ADB7BE] text-sm sm:text-lg mb-3 sm:mb-6 lg:text-xl max-w-[550px] mx-auto ">
+          <p className="text-[#ADB7BE] text-sm sm:text-lg mb-3 sm:mb-6 lg:text-xl max-w-[500px] mx-auto ">
             Experienced in creating dynamic, user-friendly applications. Passionate about crafting impactful digital experiences
             with modern tech.
           </p>
