@@ -33,17 +33,16 @@ const AboutMeSection: React.FC = () => {
             className="md:w-2/3 space-y-6"
           >
            <h2 className="text-4xl md:text-4xl font-extrabold ml-[50px]">About Me</h2>
-<p className="text-lg md:text-xl text-[#ADB7BE] max-w-lg mx-auto ml-[50px]">
-  Hi! I&apos;m Shumaila, a passionate web developer and a lifelong learner. I specialize in creating
-  interactive web applications with a focus on clean code, modern design, and optimal user experience.
-</p>
-<p className="text-lg md:text-xl text-[#ADB7BE] max-w-md mx-auto ml-[50px]">
-  With a strong foundation in JavaScript, TypeScript, and modern web frameworks like React, I aim to build
-  scalable and efficient solutions that solve real-world problems.
-</p>
+           <p className="text-lg md:text-xl text-[#ADB7BE] max-w-lg mx-auto ml-[50px]">
+             Hi! I&apos;m Shumaila, a passionate web developer and a lifelong learner. I specialize in creating
+             interactive web applications with a focus on clean code, modern design, and optimal user experience.
+           </p>
+           <p className="text-lg md:text-xl text-[#ADB7BE] max-w-md mx-auto ml-[50px]">
+             With a strong foundation in JavaScript, TypeScript, and modern web frameworks like React, I aim to build
+             scalable and efficient solutions that solve real-world problems.
+           </p>
 
-            
-            <div className="flex flex-wrap justify-center md:justify-start space-x-4 mt-6 mb-[-30px] ml-[50px]">
+            <div className="flex flex-nowrap justify-center md:justify-start gap-2 md:gap-4 mt-6 mb-[-30px] ml-[50px]">
               {[ 
                 { icon: FaGithub, link: "https://github.com/ShumailaWaheed" },
                 { icon: FaLinkedin, link: "https://www.linkedin.com/in/shumailawaheed" },
