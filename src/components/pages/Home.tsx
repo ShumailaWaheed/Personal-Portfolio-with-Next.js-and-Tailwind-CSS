@@ -17,7 +17,7 @@ const Home: React.FC = () => {
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start mt-[-10px] sm:mt-0"
         >
           <h1 className="text-white mb-3 text-5xl sm:text-6xl lg:text-6xl font-extrabold mt-[-40px]">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#9B59B6] to-[#6A1B9A] shadow-lg mt-0">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#9B59B6] to-[#6A1B9A] shadow-lg mt-0 ml-[-5px]">
               Hello, I&apos;m&nbsp;{" "}
             </span>
             <br />
@@ -38,7 +38,7 @@ const Home: React.FC = () => {
               className="text-white text-3xl sm:text-5xl lg:text-6xl"
             />
           </h1>
-          <p className="text-[#ADB7BE] text-sm sm:text-lg mb-3 sm:mb-6 lg:text-xl max-w-2xl mx-auto">
+          <p className="text-[#ADB7BE] text-sm sm:text-lg mb-3 sm:mb-6 lg:text-xl max-w-[550px] mx-auto ">
             Experienced in creating dynamic, user-friendly applications. Passionate about crafting impactful digital experiences
             with modern tech.
           </p>
@@ -64,13 +64,13 @@ const Home: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-6 sm:mt-8 lg:mt-0 relative"
         >
-          <div className="rounded-full bg-[#181818] w-[230px] h-[300px] sm:w-[300px] sm:h-[250px] lg:w-[350px] lg:h-[350px] relative shadow-lg shadow-purple-500 mt-[-30]">
+          <div className="rounded-full bg-[#181818] w-[230px] h-[300px] sm:w-[300px] sm:h-[250px] lg:w-[350px] lg:h-[350px] relative shadow-lg shadow-purple-500 mt-[-50] mb-20">
             <Image
               src="/images/hero-image.png"
               alt="hero image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
-              width={400}
-              height={400}
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 mt-[-10px]"
+              width={600}
+              height={600}
             />
           </div>
         </motion.div>

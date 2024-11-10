@@ -37,7 +37,7 @@ const TechnicalProficiency: React.FC = () => {
   return (
     <section className="mb-10 sm:py-16 bg-[#121212]"> 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl text-white font-extrabold text-center mb-12 mt-5">Technical Proficiency</h2>
+        <h2 className="text-4xl text-white font-extrabold text-center mb-12 mt-[-5px]">Technical Proficiency</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="grid grid-cols-2 gap-6">
             <div
