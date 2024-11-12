@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaFacebook, FaTwitter, FaGoogle } from 'react-icons/fa';
 import Image from 'next/image'; 
 
-const AboutMeSection: React.FC = () => {
+const About: React.FC = () => {
   return (
-    <section className="relative py-16 px-4 bg-[#1e1e1e] text-white">
+    <section id="about" className="relative py-16 px-4 bg-[#1e1e1e] text-white">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0">
           
@@ -77,4 +77,4 @@ const AboutMeSection: React.FC = () => {
   );
 };
 
-export default AboutMeSection;
+export default About;

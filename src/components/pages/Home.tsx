@@ -49,12 +49,13 @@ const Home: React.FC = () => {
             >
               Hire Me
             </Link>
-            <Link
-              href="/"
+            <a
+              href="/cv.pdf" 
+              download="Shumaila_Waheed_CV.pdf" 
               className="px-2 inline-block py-3 w-150px sm:w-auto rounded-full border-2 border-purple-600 text-white bg-transparent hover:bg-slate-800 transition-all duration-300 shadow-md shadow-purple-500 text-2xl sm:text-lg lg:text-2x1"
             >
               <span className="w-[-20px] h-[20px] px-4 sm:px-6 lg:px-8 py-2 sm:py-3">Download CV</span>
-            </Link>
+            </a>
           </div>
         </motion.div>
 
@@ -80,3 +81,4 @@ const Home: React.FC = () => {
 };
 
 export default Home;
+

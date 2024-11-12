@@ -36,12 +36,10 @@ const Navbar: React.FC = () => {
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href="#portfolio" 
-          className="text-2xl md:text-5xl text-white font-semibold ml-[30px]"
+          className="text-2xl md:text-5xl text-white font-semibold ml-[10px]"
         >
           Portfolio
         </Link>
-
-        {/* Mobile Hamburger Menu Button */}
         <div className="mobile-menu block md:hidden">
           <button
             onClick={() => setNavbarOpen(!navbarOpen)}
@@ -54,8 +52,6 @@ const Navbar: React.FC = () => {
             )}
           </button>
         </div>
-
-        {/* Desktop Navigation Links */}
         <div className="menu hidden md:block md:w-auto">
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
             {navLinks.map((link, index) => (
@@ -70,8 +66,6 @@ const Navbar: React.FC = () => {
             ))}
           </ul>
         </div>
-
-        {/* Mobile Navigation Links */}
         <div className={`mobile-menu-links ${navbarOpen ? "block" : "hidden"} md:hidden`}>
           <ul className="flex flex-col p-4 space-y-4 mt-4 bg-[#121212]">
             {navLinks.map((link, index) => (

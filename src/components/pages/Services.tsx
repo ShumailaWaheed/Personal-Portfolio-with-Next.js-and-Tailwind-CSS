@@ -37,7 +37,7 @@ const services = [
   }
 ];
 
-const ServiceSection: React.FC = () => {
+const Services: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -77,7 +77,6 @@ const ServiceSection: React.FC = () => {
   </h1>
 
   <div className="flex justify-center items-center mt-8 w-full max-w-[1800px] mx-auto relative">
-    {/* Left Button */}
     <button
       onClick={handlePrev}
       className="text-white text-2xl p-2 bg-[#333333] rounded-full absolute left-[-50px] lg:left-[-60px] top-1/2 transform -translate-y-1/2 shadow-xl hover:scale-110 hover:bg-[#9b59b6] transition-all"
@@ -127,4 +126,4 @@ const ServiceSection: React.FC = () => {
   );
 };
 
-export default ServiceSection;
+export default Services;

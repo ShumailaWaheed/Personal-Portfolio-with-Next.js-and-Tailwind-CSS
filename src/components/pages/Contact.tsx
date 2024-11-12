@@ -50,9 +50,8 @@ const Contact: React.FC = () => {
                   <FaEnvelope className="text-6xl text-gray-400 hover:text-[#9b59b6] transition-colors duration-300" />
                 </div>
                 <h4 className="text-1 font-semibold text-center">Email</h4>
-                <p className="mt-4 text-center text-lg-1">shumaila@example.com</p>
+                <p className="mt-4 text-center text-lg-1">shumailawaheed253@gmail.com</p>
               </motion.div>
-
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
